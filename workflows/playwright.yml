@@ -13,10 +13,6 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-      env:
-        super_secret: ${{ secrets.BASE_URL }}
-        super_secret: ${{ secrets.ADMIN_EMAIL }}
-        super_secret: ${{ secrets.ADMIN_PASSWORD }}
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
